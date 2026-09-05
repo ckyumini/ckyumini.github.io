@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name</title>
-  <meta name="description" content="">
+  <title>Kyumin Choi</title>
+  <meta name="description" content="Kyumin Choi — undergraduate student in Applied Artificial Intelligence and Mathematics at Sungkyunkwan University.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
   <style>
@@ -83,9 +83,12 @@
 
     .pub { margin-bottom: 1.25rem; max-width: 66ch; }
     .pub .title { color: var(--ink); font-weight: 500; }
+    .pub .authors strong { font-weight: 600; color: var(--ink); }
     .pub .venue { font-style: italic; }
     .pub .links { font-size: 0.9rem; }
     .pub .links a { margin-right: 0.75rem; }
+
+    .note { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
 
     ul.plain { padding-left: 1.1rem; margin: 0; max-width: 66ch; }
     ul.plain li { margin-bottom: 0.35rem; }
@@ -111,58 +114,94 @@
   <div class="page">
 
     <aside>
-      <img class="photo" src="photo.jpg" alt="">
-      <h1>Your Name</h1>
-      <p class="role">Position<br>Affiliation</p>
+      <img class="photo" src="photo.jpg" alt="Kyumin Choi">
+      <h1>Kyumin Choi</h1>
+      <p class="role">Undergraduate Student<br>Applied Artificial Intelligence and Mathematics<br>Sungkyunkwan University, Republic of Korea</p>
       <ul class="contact">
-        <li><a href="mailto:">Email</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Google Scholar</a></li>
-        <li><a href="#">CV</a></li>
+        <li><a href="mailto:skku02ky1224@g.skku.edu">skku02ky1224@g.skku.edu</a></li>
+        <li><a href="https://github.com/ckyumini">GitHub</a></li>
+        <!-- <li><a href="#">Google Scholar</a></li> -->
+        <!-- <li><a href="#">CV</a></li> -->
       </ul>
     </aside>
 
     <main>
+      <!--
       <section id="about">
         <h2>About</h2>
         <p></p>
       </section>
+      -->
 
       <section id="interests">
         <h2>Research Interests</h2>
         <ul class="plain">
-          <li></li>
-          <li></li>
+          <li><strong>Generative Models</strong> — diffusions and flows, one-step generative models</li>
+          <li><strong>Optimization</strong> — optimal transport</li>
+          <li><strong>Application</strong> — robotics</li>
         </ul>
       </section>
 
       <section id="publications">
-        <h2>Publications</h2>
+        <h2>Publications &amp; Preprints</h2>
+        <p class="note">* denotes equal contribution; &dagger; denotes corresponding author.</p>
         <div class="pub">
-          <span class="title">Title</span><br>
-          <span class="authors">Authors</span><br>
-          <span class="venue">Venue</span>, Year<br>
-          <span class="links"><a href="#">Paper</a><a href="#">Code</a></span>
+          <span class="title">Conditional Unbalanced Optimal Transport Maps: An Outlier-Robust Framework for Conditional Generative Modeling</span><br>
+          <span class="authors">Jiwoo Yoon*, <strong>Kyumin Choi</strong>*, Jaewoong Choi&dagger;</span><br>
+          <span class="venue">ICML 2026 Workshop on Structured Probabilistic Inference &amp; Generative Modeling</span>, 2026<br>
+          <span class="links"><a href="https://openreview.net/pdf?id=KbEbJBtavd">Paper</a></span>
         </div>
       </section>
 
       <section id="experience">
-        <h2>Experience</h2>
+        <h2>Research Experience</h2>
         <div class="entry">
-          <div class="when">Year –</div>
-          <div class="what"><strong>Role</strong><span class="sub">Organization</span></div>
+          <div class="when">Jun 2026 – Present</div>
+          <div class="what"><strong>Research Intern, BISPL Lab, KAIST</strong><span class="sub">Advisor: Prof. Jongchul Ye · Generative modeling and its applications to VLAs</span></div>
+        </div>
+        <div class="entry">
+          <div class="when">Aug 2025 – Jun 2026</div>
+          <div class="what"><strong>Research Intern, StatML Lab, Sungkyunkwan University</strong><span class="sub">Advisor: Prof. Jaewoong Choi · Outlier-robust conditional generative modeling via unbalanced optimal transport; robust drifting generative modeling</span></div>
+        </div>
+        <div class="entry">
+          <div class="when">Dec 2024 – Jun 2025</div>
+          <div class="what"><strong>Undergraduate Research Program, Intelligent and Interactive Systems Lab, Sungkyunkwan University</strong><span class="sub">Advisor: Prof. Jangwon Lee · Micro-action based emotion recognition</span></div>
         </div>
       </section>
 
       <section id="education">
         <h2>Education</h2>
         <div class="entry">
-          <div class="when">Year –</div>
-          <div class="what"><strong>Degree, Institution</strong><span class="sub">Major</span></div>
+          <div class="when">2021.02 – 2027.02<br>(expected)</div>
+          <div class="what"><strong>B.S., Sungkyunkwan University</strong><span class="sub">Applied Artificial Intelligence and Mathematics (double major)</span></div>
         </div>
       </section>
 
-      <footer>Last updated: </footer>
+      <section id="awards">
+        <h2>Honors &amp; Awards</h2>
+        <div class="entry">
+          <div class="when">Aug 2026</div>
+          <div class="what"><strong>Honorable Mention Poster Award, KSS Summer Conference 2026</strong><span class="sub">The Korean Statistical Society &middot; Conditional Unbalanced Optimal Transport Maps: An Outlier-Robust Framework for Conditional Generative Modeling</span></div>
+        </div>
+        <div class="entry">
+          <div class="when">Aug 2026</div>
+          <div class="what"><strong>Honorable Mention Award, Physical AI Challenge 2026</strong><span class="sub">Korean Artificial Intelligence Association · Robust pick-and-place with a few real demonstrations</span></div>
+        </div>
+        <div class="entry">
+          <div class="when">Jul 2026</div>
+          <div class="what"><strong>Peer Recognition Award, Co-Deep Learning Project</strong><span class="sub">The Knowledge Center for Innovative Higher Education, Sungkyunkwan University &middot; Development of lightweight policy for bi-manual robot manipulation</span></div>
+        </div>
+        <div class="entry">
+          <div class="when">Nov 2024</div>
+          <div class="what"><strong>Dean&rsquo;s List Award &amp; Academic Excellence Scholarship</strong><span class="sub">College of Computing and Informatics, Sungkyunkwan University</span></div>
+        </div>
+        <div class="entry">
+          <div class="when">Jul 2024</div>
+          <div class="what"><strong>Grand Prize (1st Place), &ldquo;Small Ripple, Big Wave, New Wave&rdquo; Academic Competition</strong><span class="sub">College of Computing and Informatics, Sungkyunkwan University</span></div>
+        </div>
+      </section>
+
+      <footer>Last updated: September 2026</footer>
     </main>
 
   </div>
