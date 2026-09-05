@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Personal Page</title>
+  <meta name="description" content="Undergraduate researcher in optimal transport and generative modeling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1c2230;
+      --text: #2e3440;
+      --muted: #6b7280;
+      --rule: #d9dde3;
+      --accent: #2f4f6f;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { font-size: 17px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Newsreader", "Times New Roman", Georgia, serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+    a:hover, a:focus-visible { border-bottom-color: var(--accent); outline: none; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 5rem;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 4rem;
+    }
+
+    /* Left column */
+    aside { position: sticky; top: 3rem; align-self: start; }
+    .photo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 1.25rem;
+    }
+    aside h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 0 0 0.25rem;
+      color: var(--ink);
+    }
+    .role { color: var(--muted); margin: 0 0 1.25rem; font-size: 0.95rem; }
+    .contact { list-style: none; padding: 0; margin: 0; font-size: 0.95rem; }
+    .contact li { margin-bottom: 0.35rem; }
+
+    /* Right column */
+    main h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 0.9rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    section + section { margin-top: 2.75rem; }
+    p { margin: 0 0 1rem; max-width: 66ch; }
+
+    .entry {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .entry .when { color: var(--muted); font-size: 0.95rem; }
+    .entry .what strong { font-weight: 500; color: var(--ink); }
+    .entry .what .sub { display: block; color: var(--muted); font-size: 0.95rem; }
+
+    .pub { margin-bottom: 1.25rem; max-width: 66ch; }
+    .pub .title { color: var(--ink); font-weight: 500; }
+    .pub .venue { font-style: italic; }
+    .pub .links { font-size: 0.9rem; }
+    .pub .links a { margin-right: 0.75rem; }
+
+    ul.plain { padding-left: 1.1rem; margin: 0; max-width: 66ch; }
+    ul.plain li { margin-bottom: 0.35rem; }
+
+    footer {
+      grid-column: 1 / -1;
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 760px) {
+      .page { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 2.5rem; }
+      aside { position: static; }
+      .photo { width: 160px; }
+      .entry { grid-template-columns: 1fr; gap: 0.15rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <aside>
+      <img class="photo" src="photo.jpg" alt="Portrait of Your Name">
+      <h1>Your Name</h1>
+      <p class="role">Undergraduate Student<br>Sungkyunkwan University</p>
+      <ul class="contact">
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/yourhandle">GitHub</a></li>
+        <li><a href="https://scholar.google.com/">Google Scholar</a></li>
+        <li><a href="cv.pdf">Curriculum Vitae</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>I am an undergraduate student at Sungkyunkwan University with a double major in mathematics. I work on optimal transport-based generative models at the StatML Lab under Prof. Jaewoong Choi, and I am interested in the theory of unbalanced optimal transport and its application to conditional generation.</p>
+        <p>From late June 2026, I am a research intern at KAIST under Prof. Jong Chul Ye. I also take part in SKKAI, a student AI organization, where I work on robot learning projects.</p>
+      </section>
+
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <ul class="plain">
+          <li>Optimal transport and unbalanced optimal transport</li>
+          <li>Generative modeling: diffusion and flow-based models</li>
+          <li>Robot learning and vision-language-action models</li>
+          <li>Measure theory, probability, and their role in machine learning</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <div class="pub">
+          <span class="title">Paper Title Here</span><br>
+          <span class="authors">Your Name*, Jiwoo Yoon*, Jaewoong Choi</span> (* equal contribution)<br>
+          <span class="venue">IEEE Transactions on Neural Networks and Learning Systems</span>, 2026<br>
+          <span class="links"><a href="#">Paper</a><a href="#">Code</a></span>
+        </div>
+        <div class="pub">
+          <span class="title">Workshop Paper Title Here</span><br>
+          <span class="authors">Your Name, Coauthors</span><br>
+          <span class="venue">ICLR 2026 Workshop on Structured Probabilistic Inference and Generative Modeling</span><br>
+          <span class="links"><a href="#">Poster</a></span>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Research Experience</h2>
+        <div class="entry">
+          <div class="when">2026 –</div>
+          <div class="what"><strong>Research Intern</strong><span class="sub">KAIST, advised by Prof. Jong Chul Ye</span></div>
+        </div>
+        <div class="entry">
+          <div class="when">2024 –</div>
+          <div class="what"><strong>Undergraduate Researcher</strong><span class="sub">StatML Lab, Sungkyunkwan University, advised by Prof. Jaewoong Choi</span></div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="when">2022 –</div>
+          <div class="what"><strong>B.S., Sungkyunkwan University</strong><span class="sub">Double major in Mathematics</span></div>
+        </div>
+      </section>
+
+      <footer>Last updated September 2026.</footer>
+    </main>
+
+  </div>
+</body>
+</html>
